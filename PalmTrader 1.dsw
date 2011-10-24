@@ -1,0 +1,97 @@
+Microsoft Developer Studio Workspace File, Format Version 5.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Config"=".\Config\Config.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/PalmTrader 1/Config", BQAAAAAA
+    .\config
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Pedidos"=".\Pedidos\Pedidos.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/PalmTrader 1/Pedidos", WOAAAAAA
+    .\pedidos
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "QSTransfer"=".\QSTransfer\QSTransfer.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/PalmTrader 1/QSTransfer", MPAAAAAA
+    .\qstransfer
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Server"=".\Server\Server.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/PalmTrader 1/Server", PEAAAAAA
+    .\server
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ZTechDB"=".\ZTechDB\ZTechDB.dsp" - Package Owner=<29>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+    begin source code control
+    "$/PalmTrader 1", VOAAAAAA
+    .
+    end source code control
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

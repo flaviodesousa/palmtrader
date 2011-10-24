@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Config.dsp]
+SCC_Aux_Path = "c:\vss"
+SCC_Project_Name = "$/PalmTrader 1/Config", TAAAAAAA

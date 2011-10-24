@@ -1,0 +1,627 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Server.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Server.ico"
+IDR_SERVERTYPE          ICON    DISCARDABLE     "res\\ServerDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "A&tualizar base...",          ID_ATUALIZAR_BASE
+        MENUITEM "&Opções...",                  ID_OPCOES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Server...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Server"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Server Version 1.34",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) ZTech Automação 1997-1999",IDC_STATIC,40,
+                    25,148,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_SERVER_FORM DIALOG DISCARDABLE  0, 0, 440, 148
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_CONEXOES,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,426,115
+    EDITTEXT        IDC_SERVER_STATUS,69,129,186,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Status do servidor",IDC_STATIC,7,130,58,8
+END
+
+IDD_ATUALIZAR DIALOG DISCARDABLE  0, 0, 333, 106
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Atualizar..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Produtos",IDC_CHECK_PRODUTOS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,16,44,10
+    CONTROL         "P&reços",IDC_CHECK_PRECOS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,26,38,10
+    CONTROL         "Estoque",IDC_CHECK_ESTOQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,36,42,10
+    CONTROL         "Clien&tes",IDC_CHECK_CLIENTES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,88,16,41,10
+    CONTROL         "Títulos",IDC_CHECK_TITULOS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,88,26,38,10
+    CONTROL         "Vendedores",IDC_CHECK_VENDEDORES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,88,36,54,10
+    CONTROL         "Códigos de co&brança",IDC_CHECK_COBRANCA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,167,16,83,10
+    CONTROL         "Pla&nos de pagamento",IDC_CHECK_PLANOS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,167,26,85,10
+    CONTROL         "Tabelas de preços",IDC_CHECK_TABELAS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,167,36,75,10
+    CONTROL         "Produtos",IDC_CHECK_PRODUTOS_PARTIAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,66,44,10
+    CONTROL         "Preços",IDC_CHECK_PRECOS_PARTIAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,88,66,38,10
+    CONTROL         "Clientes",IDC_CHECK_CLIENTES_PARTIAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,167,66,41,10
+    DEFPUSHBUTTON   "&Iniciar...",IDOK,276,7,50,14
+    PUSHBUTTON      "A&vançado...",IDC_BUTTON_AVANCADO,276,25,50,14
+    PUSHBUTTON      "&Cancelar",IDCANCEL,276,45,50,14
+    GROUPBOX        "Atualização total",IDC_STATIC,7,7,251,43
+    GROUPBOX        "Atualização parcial",IDC_STATIC,7,57,251,23
+    CONTROL         "Atualizar em paralelo",IDC_CHECK_PARALELO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,89,81,10
+END
+
+IDD_OPCOES DIALOG DISCARDABLE  0, 0, 309, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Opções"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "IP do servidor",IDC_STATIC,15,17,44,8
+    EDITTEXT        IDC_APLICACAO_ADDRESS,63,17,95,14,ES_AUTOHSCROLL
+    LTEXT           "Porta TCP/IP",IDC_STATIC,15,35,44,8
+    EDITTEXT        IDC_APLICACAO_PORT,63,34,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "DSN",IDC_STATIC,23,69,16,8
+    EDITTEXT        IDC_DSN,42,69,116,14,ES_AUTOHSCROLL
+    LTEXT           "Usuário",IDC_STATIC,13,84,25,8
+    EDITTEXT        IDC_USUARIO,42,84,116,14,ES_AUTOHSCROLL
+    LTEXT           "Senha",IDC_STATIC,17,100,22,8
+    EDITTEXT        IDC_SENHA,42,100,116,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Porta TCP/IP",IDC_STATIC,182,18,44,8
+    EDITTEXT        IDC_PORTA_VENDEDORES,233,16,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Último bloco enviado",IDC_STATIC,182,46,67,8
+    EDITTEXT        IDC_ULTIMO_BLOCO_ENVIADO,183,54,98,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Próximo número de pedido livre",IDC_STATIC,182,69,99,8
+    EDITTEXT        IDC_PROXIMO_NUMERO_PEDIDO,182,77,59,14,ES_AUTOHSCROLL
+    LTEXT           "Pedidos por bloco",IDC_STATIC,183,92,58,8
+    EDITTEXT        IDC_TAMANHO_BLOCO,183,100,59,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,197,130,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,130,50,14
+    GROUPBOX        "Comunicação com a aplicação",IDC_STATIC,7,7,159,47
+    GROUPBOX        "Banco de dados",IDC_STATIC,7,57,159,63
+    GROUPBOX        "Pedidos",IDC_STATIC,173,38,129,82
+    GROUPBOX        "Comunicação com vendedores",IDC_STATIC,175,7,127,27
+END
+
+IDD_ERROS DIALOG DISCARDABLE  0, 0, 278, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Erros"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,180,50,14
+    EDITTEXT        IDC_ERROS,7,7,264,167,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL | 
+                    NOT WS_TABSTOP
+END
+
+IDD_ATUALIZAR_AVANCADO DIALOG DISCARDABLE  0, 0, 311, 254
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Atualização automática"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_START_PRODUTOS,83,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_PRECOS,83,44,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_ESTOQUE,83,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_CLIENTES,83,76,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_TITULOS,83,92,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_COBRANCA,83,108,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_PLANOS,83,124,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_TABELAS,83,140,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_VENDEDORES,83,156,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_PRODUTOS,161,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_PRECOS,161,44,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_ESTOQUE,161,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_CLIENTES,161,76,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_COBRANCA,161,108,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_PLANOS,161,124,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_TABELAS,161,140,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_VENDEDORES,161,156,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,254,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,254,28,50,14
+    LTEXT           "Produtos",IDC_STATIC,49,28,29,8
+    LTEXT           "Preços",IDC_STATIC,55,44,23,8
+    LTEXT           "Estoque",IDC_STATIC,51,60,27,8
+    LTEXT           "Clientes",IDC_STATIC,51,76,26,8
+    LTEXT           "Códigos de cobrança",IDC_STATIC,9,108,68,8
+    LTEXT           "Planos de pagamento",IDC_STATIC,7,124,70,8
+    LTEXT           "Tabelas de preços",IDC_STATIC,17,140,60,8
+    LTEXT           "Vendedores",IDC_STATIC,39,156,39,8
+    LTEXT           "A partir de",IDC_STATIC,89,17,33,8
+    LTEXT           "Atualizar a cada",IDC_STATIC,157,17,52,8
+    LTEXT           "minutos",IDC_STATIC,129,108,25,8
+    LTEXT           "minutos",IDC_STATIC,129,124,25,8
+    LTEXT           "minutos",IDC_STATIC,129,140,25,8
+    LTEXT           "minutos",IDC_STATIC,129,156,25,8
+    LTEXT           "minutos",IDC_STATIC,205,156,25,8
+    LTEXT           "minutos",IDC_STATIC,205,140,25,8
+    LTEXT           "minutos",IDC_STATIC,205,124,25,8
+    LTEXT           "minutos",IDC_STATIC,205,108,25,8
+    LTEXT           "minutos",IDC_STATIC,129,28,25,8
+    LTEXT           "minutos",IDC_STATIC,129,60,25,8
+    LTEXT           "minutos",IDC_STATIC,129,76,25,8
+    LTEXT           "minutos",IDC_STATIC,129,44,25,8
+    LTEXT           "minutos",IDC_STATIC,205,76,25,8
+    LTEXT           "minutos",IDC_STATIC,205,60,25,8
+    LTEXT           "minutos",IDC_STATIC,205,44,25,8
+    LTEXT           "minutos",IDC_STATIC,205,28,25,8
+    EDITTEXT        IDC_EDIT_REPEAT_TITULOS,161,92,40,14,ES_AUTOHSCROLL
+    LTEXT           "minutos",IDC_STATIC,129,92,25,8
+    LTEXT           "minutos",IDC_STATIC,205,92,25,8
+    RTEXT           "Títulos",IDC_STATIC,37,92,41,8
+    GROUPBOX        "Atualização total",IDC_STATIC,7,7,239,169
+    EDITTEXT        IDC_EDIT_START_PRODUTOS2,83,194,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_PRECOS2,83,210,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_START_CLIENTES2,83,226,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_PRODUTOS2,161,194,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_PRECOS2,161,210,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REPEAT_CLIENTES2,161,226,40,14,ES_AUTOHSCROLL
+    LTEXT           "Produtos",IDC_STATIC,49,194,29,8
+    LTEXT           "Preços",IDC_STATIC,55,210,23,8
+    LTEXT           "Clientes",IDC_STATIC,51,226,26,8
+    LTEXT           "minutos",IDC_STATIC,129,194,25,8
+    LTEXT           "minutos",IDC_STATIC,129,226,25,8
+    LTEXT           "minutos",IDC_STATIC,129,210,25,8
+    LTEXT           "minutos",IDC_STATIC,205,226,25,8
+    LTEXT           "minutos",IDC_STATIC,205,210,25,8
+    LTEXT           "minutos",IDC_STATIC,205,194,25,8
+    GROUPBOX        "Atualização parcial",IDC_STATIC,7,182,239,64
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,30,0,0
+ PRODUCTVERSION 1,30,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "ZTech Automação Ltda\0"
+            VALUE "FileDescription", "Server MFC Application\0"
+            VALUE "FileVersion", "1, 30, 0, 0\0"
+            VALUE "InternalName", "Trader Server\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998,1999\0"
+            VALUE "OriginalFilename", "Server.EXE\0"
+            VALUE "ProductName", "Server Application\0"
+            VALUE "ProductVersion", "1, 30, 0, 0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SERVER_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_ATUALIZAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        VERTGUIDE, 14
+        VERTGUIDE, 88
+        VERTGUIDE, 167
+        VERTGUIDE, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+        HORZGUIDE, 16
+        HORZGUIDE, 66
+    END
+
+    IDD_OPCOES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        VERTGUIDE, 158
+        VERTGUIDE, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+        HORZGUIDE, 114
+        HORZGUIDE, 120
+    END
+
+    IDD_ERROS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_ATUALIZAR_AVANCADO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        VERTGUIDE, 246
+        VERTGUIDE, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+        HORZGUIDE, 176
+        HORZGUIDE, 182
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Server\n\nServer\n\n\nServer.Document\nServer Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Server"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ATUALIZAR_BASE       "Atualizar base de dados a partir do aplicativo do usuário"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Server.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxdb.rc"          // Database resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
